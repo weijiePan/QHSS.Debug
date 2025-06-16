@@ -14,7 +14,7 @@ def sum_of_evens(start, end):
     total = 0
     for i in range(start, end + 1):
         if i % 2 == 0:
-            total += total + i
+            total += i
     return total
 
 # Get user input and display the result.
