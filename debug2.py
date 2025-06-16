@@ -7,8 +7,9 @@
 def get_third_word(sentence):
     words = sentence.split(" ")
     if len(words) < 3:
-        raise ValueError("Error: Sentence has less than 3 words.")
-    return words[3]
+        print("Error: Sentence has less than 3 words.")
+        quit(1)
+    return words[2]
 
 # Main function to get input and display output.
 def main():
