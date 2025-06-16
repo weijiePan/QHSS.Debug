@@ -12,7 +12,7 @@ class BankAccount:
         self.transactions = []
 
     # Add funds to the account and record the transaction.
-    def deposit(amount):
+    def deposit(self, amount):
         if amount <= 0:
             print("Deposit must be positive.")
             return
@@ -20,7 +20,7 @@ class BankAccount:
         self.transactions.append(f"Deposited ${amount}")
 
     # Withdraw funds if sufficient balance exists; otherwise, print error.
-    def withdraw(amount):
+    def withdraw(self, amount):
         if amount > self.balance:
             print("Insufficient funds.")
             return
